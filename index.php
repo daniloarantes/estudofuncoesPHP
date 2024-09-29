@@ -24,12 +24,40 @@
     }
 
     // FUNÇÃO SIMPLES
+    function olaMundo() {
+        echo "Olá mundo!";
+    }
+
+    // FUNÇÃO SIMPLES COM ARGUMENTO
     function quadrado($num) {
         echo "$num ao quadrado é " . $num * $num;
     }
 
-    // Função simples
+    // FUNÇÃO COM RETORNO
+    function quadrado2($num) {
+        return $num * $num;
+    }
+
+    // Arrow Function
+    $num2 = fn($num) => $num * $num;
+
+    // Chamando função simples
+    olaMundo();
+
+    echo "<br>";
+
+    // Chamando Função simples com argumento
     quadrado($num);
+
+    echo "<br>";
+
+    // Chamando função com retorno
+    echo "$num ao quadrado é " . quadrado2($num);
+
+    echo "<br>";
+
+    // Utilizando Arrow Function
+    echo "$num ao quadrado é " . $num2($num);
 
 ?>
 
