@@ -18,6 +18,9 @@
     <button>Calcular</button>
 </form>
 
+<br><hr>
+<br>
+
 <?php
     if (isset($_GET['num'])) {
         $num = $_GET["num"];
